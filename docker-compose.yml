@@ -2,8 +2,9 @@ services:
   web:
     # optional container name
     container_name: f8-k18-fullstack-web
-    image: node:25 # clone image from docker hub
-    working_dir: /app/web # WORKDIR
+#    build:
+#      dockerfile: web/Dockerfile
+    image: bangtxf8/f8-k18-fullstack:260530
     volumes:
       - ./web:/app/web # mapping folder pc and docker
     ports:
