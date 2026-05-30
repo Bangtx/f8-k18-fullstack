@@ -1,10 +1,12 @@
 services:
   web:
+    # optional container name
     container_name: f8-k18-fullstack-web
-    image: node:25
-    working_dir: /app/web
+    image: node:25 # clone image from docker hub
+    working_dir: /app/web # WORKDIR
     volumes:
-      - ./web:/app/web
+      - ./web:/app/web # mapping folder pc and docker
     ports:
-      - 3000:3000
+      - 3000:3000 # mapping port
+    # run right after the command "docker compose up" run
     command: ['npm', 'run', 'dev', '--', '--port', '3000']
