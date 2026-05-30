@@ -10,3 +10,18 @@ services:
       - 3000:3000 # mapping port
     # run right after the command "docker compose up" run
     command: ['npm', 'run', 'dev', '--', '--port', '3000']
+
+  api:
+    container_name: f8-k18-fullstack-api
+    image: node:25
+    working_dir: /app/api
+    volumes:
+      - ./api:/app/api
+    ports:
+      - 4000:3000
+    command: ["npx", "json-server", "db.json"]
+    # json-server
+    # node
+    # npm i json-server
+    # db.json -> fake data
+    # npx json-server db.json
