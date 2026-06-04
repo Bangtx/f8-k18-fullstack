@@ -1,12 +1,41 @@
 {
-  "customers": [
+  "auth": {
+    "refreshToken": "",
+    "accessToken": ""
+  },
+  "companies": [
     {
-      "id": 1,
-      "name": "test"
+      "id": "1",
+      "name": "f8",
+      "logo": "image url",
+      "description": "....",
+      "totalMember": 200
     },
     {
-      "id": 2,
-      "name": "test 2"
+      "id": "2",
+      "name": "fpt",
+      "logo": "image url",
+      "description": "....",
+      "totalMember": 100
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "it"
+    },
+    {
+      "id": "2",
+      "name": "ke toan"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "categoryId": "1",
+      "companyId": "2",
+      "description": "html",
+      "range": "10 - 20"
     }
   ]
 }

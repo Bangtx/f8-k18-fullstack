@@ -1,0 +1,16 @@
+{
+  "id": "1",
+  "category": {
+    "id": "1",
+    "name": "it"
+  },
+  "company": {
+    "id": "2",
+    "name": "fpt",
+    "logo": "image url",
+    "description": "....",
+    "totalMember": 100
+  },
+  "description": "html",
+  "range": "10 - 20"
+}
